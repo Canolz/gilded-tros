@@ -1,0 +1,17 @@
+.inventory-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .inventory-grid {
+    width: 100%;
+    height:auto;
+  }
+
+  .inventory-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

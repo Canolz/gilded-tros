@@ -1,1 +1,10 @@
-<p>inventory works!</p>
+<div class="inventory-container">
+    <h2>Inventory List</h2>
+    <mat-grid-list cols="4" rowHeight="1:1" gutterSize="16px" class="inventory-grid">
+        @for (item of items; track $index) {
+            <mat-grid-tile>
+                <app-item [item]="item"></app-item>
+            </mat-grid-tile>
+        }
+    </mat-grid-list>
+  </div>
