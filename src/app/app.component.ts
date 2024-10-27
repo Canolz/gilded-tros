@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { InventoryComponent } from "./components/inventory/inventory.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  imports: [RouterOutlet, InventoryComponent]
 })
 export class AppComponent {
-  title = 'gilded-tros';
+  title = 'Gilded Tros';
 }
