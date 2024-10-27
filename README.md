@@ -1,6 +1,7 @@
-# GildedTros
+# Gilded Tros Refactoring Kata
+This Kata is based on the Gilded Rose Kata, originally created by Terry Hughes (http://twitter.com/TerryHughes). It is already on GitHub here.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+This project is done with Angular 18
 
 ## Development server
 
