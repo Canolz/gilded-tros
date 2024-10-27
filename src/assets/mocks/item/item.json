@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Good Wine",
+        "sellIn": 10,
+        "quality": 20
+    },
+    {
+        "name": "B-DAWG Keychain",
+        "sellIn": 5,
+        "quality": 80
+    },
+    {
+        "name": "Backstage passes for Re:Factor",
+        "sellIn": 15,
+        "quality": 20
+    },
+    {
+        "name": "Duplicate Code",
+        "sellIn": 3,
+        "quality": 6
+    }
+]
