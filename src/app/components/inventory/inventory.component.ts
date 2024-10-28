@@ -34,7 +34,7 @@ export class InventoryComponent implements OnInit {
   }
 
   loadItems(): void {
-    forkJoin([
+    forkJoin<[Item[], Item[]]>([
       this.itemApiService.getItems(),
       this.itemApiService.getSmellyItems()
     ])
