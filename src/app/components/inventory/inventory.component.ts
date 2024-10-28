@@ -41,7 +41,6 @@ export class InventoryComponent implements OnInit {
     .pipe(takeUntilDestroyed(this.destroyRef))
     .subscribe(([normalItems, smellyItems]: [Item[], Item[]]) => {
       this.items = [...normalItems, ...smellyItems];
-      this.inventoryService.updateQuality(this.items);
     });
   }
 
