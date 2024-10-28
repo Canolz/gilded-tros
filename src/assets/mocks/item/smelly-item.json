@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Duplicate Code",
+        "sellIn": 4,
+        "quality": 20
+    },
+    {
+        "name": "Long Methods",
+        "sellIn": 4,
+        "quality": 20
+    },
+    {
+        "name": "Ugly Variable Names",
+        "sellIn": 4,
+        "quality": 20
+    }
+]
