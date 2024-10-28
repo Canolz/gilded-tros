@@ -7,11 +7,15 @@ import { Item } from "../../interfaces/item.interface";
     providedIn: 'root'
 })
 export class ItemApiService {
-    private mockDataUrl = 'assets/mocks/item/item.json';
+    private mockBaseUrl = 'assets/mocks/item/';
 
     constructor(private http: HttpClient) {}
 
     getItems(): Observable<Item[]> {
-        return this.http.get<Item[]>(this.mockDataUrl);
+        return this.http.get<Item[]>(`${this.mockBaseUrl}item.json`);
+    }
+
+    getSmellyItems(): Observable<Item[]> {
+        return this.http.get<Item[]>(`${this.mockBaseUrl}smelly-item.json`);
     }
 }
