@@ -1,10 +1,16 @@
 <div class="inventory-container">
     <h2>Inventory List</h2>
+
+    <div class="buttons">
+        <button mat-raised-button color="primary" (click)="nextDay()">Next day</button>
+        <button mat-raised-button color="warn" (click)="loadItems()">Reset</button>
+    </div>
+
     <mat-grid-list cols="4" rowHeight="1:1" gutterSize="16px" class="inventory-grid">
         @for (item of items; track $index) {
             <mat-grid-tile>
-                <app-item [item]="item"></app-item>
+                <app-item [item]="item"/>
             </mat-grid-tile>
         }
     </mat-grid-list>
-  </div>
+</div>
