@@ -38,10 +38,10 @@ export class InventoryComponent implements OnInit {
       this.itemApiService.getItems(),
       this.itemApiService.getSmellyItems()
     ])
-    .pipe(takeUntilDestroyed(this.destroyRef))
-    .subscribe(([normalItems, smellyItems]: [Item[], Item[]]) => {
-      this.items = [...normalItems, ...smellyItems];
-    });
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe(([normalItems, smellyItems]: [Item[], Item[]]) => {
+        this.items = [...normalItems, ...smellyItems];
+      });
   }
 
   nextDay(): void {

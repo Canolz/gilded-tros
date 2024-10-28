@@ -1,14 +1,14 @@
 @if (item) {
-    <mat-card class="item-card">
-        <mat-card-header>
-            <mat-card-title>{{ item.name }}</mat-card-title>
-        </mat-card-header>
+<mat-card class="item-card">
+    <mat-card-header>
+        <mat-card-title>{{ item.name }}</mat-card-title>
+    </mat-card-header>
 
-        <mat-card-content>
-            <p><strong>Sell In:</strong> {{ item.sellIn }} days</p>
-            <p><strong>Quality:</strong> {{ item.quality }}</p>
-        </mat-card-content>
-    </mat-card>
+    <mat-card-content>
+        <p><strong>Sell In:</strong> {{ item.sellIn }} days</p>
+        <p><strong>Quality:</strong> {{ item.quality }}</p>
+    </mat-card-content>
+</mat-card>
 } @else {
-    <p>No item available</p>
+<p>No item available</p>
 }

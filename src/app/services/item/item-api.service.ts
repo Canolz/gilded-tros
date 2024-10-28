@@ -9,7 +9,7 @@ import { Item } from "../../interfaces/item.interface";
 export class ItemApiService {
     private mockBaseUrl = 'assets/mocks/item/';
 
-    constructor(private http: HttpClient) {}
+    constructor(private http: HttpClient) { }
 
     getItems(): Observable<Item[]> {
         return this.http.get<Item[]>(`${this.mockBaseUrl}item.json`);
